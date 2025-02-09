@@ -2,21 +2,26 @@ package pedroPathing.constants;
 
 import com.pedropathing.localization.*;
 import com.pedropathing.localization.constants.*;
+import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 
 public class LConstants {
     static {
-        ThreeWheelConstants.forwardTicksToInches = .001989436789;
-        ThreeWheelConstants.strafeTicksToInches = .001989436789;
-        ThreeWheelConstants.turnTicksToInches = .001989436789;
-        ThreeWheelConstants.leftY = 1;
-        ThreeWheelConstants.rightY = -1;
-        ThreeWheelConstants.strafeX = -2.5;
-        ThreeWheelConstants.leftEncoder_HardwareMapName = "leftFront";
-        ThreeWheelConstants.rightEncoder_HardwareMapName = "rightRear";
-        ThreeWheelConstants.strafeEncoder_HardwareMapName = "rightFront";
-        ThreeWheelConstants.leftEncoderDirection = Encoder.REVERSE;
-        ThreeWheelConstants.rightEncoderDirection = Encoder.REVERSE;
-        ThreeWheelConstants.strafeEncoderDirection = Encoder.FORWARD;
+        // TODO: (DONE) Change this to offsets (using this https://pedropathing.com/localization/setup.html#robot-coordinate-grid)
+        PinpointConstants.forwardY = -6.8745;
+        PinpointConstants.strafeX = -6.44;
+        PinpointConstants.distanceUnit = DistanceUnit.INCH;
+        // TODO: (DONE) Change this
+        PinpointConstants.hardwareMapName = "odo";
+        PinpointConstants.useYawScalar = false;
+        // TODO: (DONE) Change this
+        PinpointConstants.encoderResolution = GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_SWINGARM_POD;
+        // TODO: (DONE) Change this
+        PinpointConstants.forwardEncoderDirection = GoBildaPinpointDriver.EncoderDirection.FORWARD;
+        PinpointConstants.strafeEncoderDirection = GoBildaPinpointDriver.EncoderDirection.REVERSED;
+
+        // TODO: 1. When you are done, test with SensorGoBildaPinpointExample.java
+        // TODO: 2. If that works, test again with LocalizationTest.java and go to the field view on http://192.168.43.1:8080/dash
+        // TODO: 3. Do the 8 tuning steps given in FConstants.java
     }
 }
 
