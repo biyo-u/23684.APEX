@@ -16,10 +16,10 @@ public class LConstants {
         // TODO: (DONE) Change this
         PinpointConstants.encoderResolution = GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_SWINGARM_POD;
         // TODO: (DONE) Change this
-        PinpointConstants.forwardEncoderDirection = GoBildaPinpointDriver.EncoderDirection.FORWARD;
+        PinpointConstants.forwardEncoderDirection = GoBildaPinpointDriver.EncoderDirection.REVERSED;
         PinpointConstants.strafeEncoderDirection = GoBildaPinpointDriver.EncoderDirection.REVERSED;
 
-        // TODO: 1. When you are done, test with SensorGoBildaPinpointExample.java
+        // TODO: (DONE) 1. When you are done, test with SensorGoBildaPinpointExample.java
         // TODO: 2. If that works, test again with LocalizationTest.java and go to the field view on http://192.168.43.1:8080/dash
         // TODO: 3. Do the 8 tuning steps given in FConstants.java
     }
