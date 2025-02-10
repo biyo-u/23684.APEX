@@ -12,16 +12,47 @@ public class FConstants {
         FollowerConstants.localizers = Localizers.PINPOINT;
 
         // TODO: (DONE) Set these values
+        // TODO: Check this
+
+        // Original (Strafing and Turning reversed)
         FollowerConstants.leftFrontMotorName = "frontLeft";
         FollowerConstants.leftRearMotorName = "rearLeft";
         FollowerConstants.rightFrontMotorName = "frontRight";
         FollowerConstants.rightRearMotorName = "rearRight";
-
-        // TODO: (DONE) Set these values
         FollowerConstants.leftFrontMotorDirection = DcMotorSimple.Direction.REVERSE;
         FollowerConstants.leftRearMotorDirection = DcMotorSimple.Direction.REVERSE;
         FollowerConstants.rightFrontMotorDirection = DcMotorSimple.Direction.FORWARD;
         FollowerConstants.rightRearMotorDirection = DcMotorSimple.Direction.FORWARD;
+
+        // Front and Back Switched (TO TEST)
+//        FollowerConstants.leftFrontMotorName = "rearLeft";
+//        FollowerConstants.leftRearMotorName = "frontLeft";
+//        FollowerConstants.rightFrontMotorName = "rearRight";
+//        FollowerConstants.rightRearMotorName = "frontRight";
+//        FollowerConstants.leftFrontMotorDirection = DcMotorSimple.Direction.REVERSE;
+//        FollowerConstants.leftRearMotorDirection = DcMotorSimple.Direction.REVERSE;
+//        FollowerConstants.rightFrontMotorDirection = DcMotorSimple.Direction.FORWARD;
+//        FollowerConstants.rightRearMotorDirection = DcMotorSimple.Direction.FORWARD;
+
+        // Left and Right Switched (TO TEST)
+//        FollowerConstants.leftFrontMotorName = "frontRight";
+//        FollowerConstants.leftRearMotorName = "rearRight";
+//        FollowerConstants.rightFrontMotorName = "frontLeft";
+//        FollowerConstants.rightRearMotorName = "rearLeft";
+//        FollowerConstants.leftFrontMotorDirection = DcMotorSimple.Direction.FORWARD;
+//        FollowerConstants.leftRearMotorDirection = DcMotorSimple.Direction.FORWARD;
+//        FollowerConstants.rightFrontMotorDirection = DcMotorSimple.Direction.REVERSE;
+//        FollowerConstants.rightRearMotorDirection = DcMotorSimple.Direction.REVERSE;
+
+        // Left and Right Switched and Forward and Back Switched (TO TEST)
+//        FollowerConstants.leftFrontMotorName = "rearRight";
+//        FollowerConstants.leftRearMotorName = "frontRight";
+//        FollowerConstants.rightFrontMotorName = "rearLeft";
+//        FollowerConstants.rightRearMotorName = "frontLeft";
+//        FollowerConstants.leftFrontMotorDirection = DcMotorSimple.Direction.FORWARD;
+//        FollowerConstants.leftRearMotorDirection = DcMotorSimple.Direction.FORWARD;
+//        FollowerConstants.rightFrontMotorDirection = DcMotorSimple.Direction.REVERSE;
+//        FollowerConstants.rightRearMotorDirection = DcMotorSimple.Direction.REVERSE;
 
         // TODO: (DONE) Set this value (in kilograms)
         FollowerConstants.mass = 12.3;
